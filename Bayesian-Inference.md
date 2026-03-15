@@ -256,3 +256,14 @@ $$
 - tbh i don't know why the steps are E and M steps respectively
 - the algorithm converges to local ML hypothesis.
   - to $E[\ln p(D|h')]$
+
+### general EM
+
+- Given
+  - Observed data $\{ x_d \}_{d \in D}$
+  - Unobserved data $\{ z_d \}_{d \in D}$
+    - where $z_d = <z_{d1}, ... z_{dM}>$
+  - parameterized probability distribution $p(D|h)$
+    - $D = \{ d \}$ where $d=<x_d, z_d>$
+    - $h$ comprises the parameters
+- determine ML hypothesis $h'$ that maximizes $E[\ln p(D|h')]$
